@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+import os
 
 # Application definition
 
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myapp',
 ]
 
 MIDDLEWARE = [
@@ -51,10 +53,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls'
 
+STATICFILES_DIRS = (
+    		os.path.join(BASE_DIR, "static/"),
+		)
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'myapp/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

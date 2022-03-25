@@ -1,0 +1,136 @@
+{% load static %}
+<html lang="en">
+    <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+        Home Page
+    </title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <link rel="stylesheet" href="{% static 'css/design.css' %}" />
+    </head>
+    <body>
+        <form method="post" action="./" id="ctl01">
+    <div class="aspNetHidden">
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTcwNDI4OTgyMGRkGkm6uXZo9BNSqrLWtPYQVJfTDKslH46KWdIxsHCfdkk=" />
+    </div>
+    
+    <div class="aspNetHidden">
+    
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+    </div>
+        <div class="navbar navbar-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                        style="color: #ffffff;">
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                        </span>
+                    </button>
+                    <br />
+                    <br />
+                    <span style="padding-left: 50px; font-weight: bold; font-size: 20px;">Manuel S. Enverga University Foundation</span>
+                    <br />
+                    <span style="padding-left: 50px; font-weight: bold; font-size: 15px;">Lucena City, Philippines</span>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-nav-top navbar-right">
+                        <li>
+                            <a href="Default.aspx" id="A1">
+                                <span class="glyphicon glyphicon-home"></span>
+                                <br />
+                                Home 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Help.aspx" id="A2">
+                                <span class="glyphicon glyphicon-question-sign"></span>
+                                <br />
+                                Help 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="container">   
+        <div class="row">
+            
+        <div class="col-md-8" style="min-height: 350px;">
+            <div class="common-title">
+                <b><h1 style="color:#680000;"><span class="glyphicon glyphicon-th-large"></span> Welcome to myMSEUF Portal!</h1></b>
+            </div>
+            <div class="common-subtitle">
+                <p style="color:#680000;">Please select User Type</p>
+            </div>
+            <br />
+            <div class="col-md-12">
+                <ul class="nav nav-pills nav-stacked nav-pills-maroon">
+                    <li><a href="admission" id="MainContent_A5"> <span class="glyphicon glyphicon-user"></span> Admission</a></li>
+                    <li><a href="payments" id="MainContent_A6"> <span class="glyphicon glyphicon-user"></span> Online Payment (Exclusive for payments thru Dragonpay)</a></li>
+                    <li><a href="BasicEd.aspx" id="MainContent_A4"> <span class="glyphicon glyphicon-user"></span> Basic Education (K to 10)</a></li>
+                    <li><a href="SeniorHigh.aspx" id="MainContent_A1"> <span class="glyphicon glyphicon-user"></span> Senior High</a></li>
+                    <li><a href="Student.aspx" id="MainContent_A2"> <span class="glyphicon glyphicon-user"></span> College/Graduate School/ETEEAP/Law</a></li>
+                    <li><a href="Employee.aspx" id="MainContent_A3"> <span class="glyphicon glyphicon-user"></span> Faculty/Employee</a></li>
+                    <li><a href="eusis-candelaria" id="MainContent_A7"> <span class="glyphicon glyphicon-user"></span> Candelaria - Student Information System</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    
+            <!-- START OF SECOND COLUMN -->
+            <div class="col-md-4">
+    
+                <div class="common-small-title">
+                    <span class="glyphicon glyphicon-bullhorn"></span> <b>Book your appointment</b>
+                </div>
+    
+                <div style="font-size: 14px; margin-top: 10px; margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; border-radius: 10px; background: #f9faeb;">
+                    <strong><span class="glyphicon glyphicon-info-sign"></span> The university encourages you to do all transactions online. However, if you need to visit the campus, please set your appointment at <a id="HyperLink2" href="http://bookmseuf.setmore.com">http://bookmseuf.setmore.com</a>.</strong>
+                </div>
+                <br>
+                <div class="common-small-title">
+                    <b>Enrollment Schedule</b>
+                </div>
+    
+                 
+                <table style="margin-bottom: 15px;">
+                    <tr>
+                        <td style="border-bottom: 1px solid #eeeeee; padding-bottom: 15px; width: 100px; text-align: center;" colspan="3">
+                            <i>May 31 to June 11, 2022</i>
+                        </td>
+                        <td style="border-bottom: 1px solid #eeeeee; padding-bottom: 15px;">
+                            <div class="common-calendar-sched-content">
+                                <strong>Summer Term 2022</strong>
+                                <br />
+                                College/Graduate School/Law
+                            </div>
+                        </td>
+                    </tr>
+                 </table>
+    
+            </div>
+    
+        </div>
+        </div>
+        <br />
+        <div class="footer-new">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>
+                    <br />
+                    System Development Team. Information and Communications Technology Department
+                    <br />
+                    Manuel S. Enverga University Foundation
+                </p>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+        </form>
+    </body>
+    </html>
+    
